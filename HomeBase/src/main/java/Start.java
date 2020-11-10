@@ -231,15 +231,32 @@ public class Start extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-     private void LoginActionPerformed(java.awt.event.ActionEvent evt) {                                      
+    private void LoginActionPerformed(java.awt.event.ActionEvent evt) {                                      
         
     }   
     
+    private void SignupActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+    }
         
-      private void CloseMouseClicked(java.awt.event.MouseEvent evt) {                                   
+    private void CloseMouseClicked(java.awt.event.MouseEvent evt) {                                   
         
       System.exit(0);
     }
+    
+    private void MaximizeMouseClicked(java.awt.event.MouseEvent evt) {                                      
+        // TODO add your handling code here:
+        if(maximized){
+            Start.this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+            GraphicsEnvironment env = GraphicsEnvironment.getLocalGraphicsEnvironment();
+            maximized = false;
+            Start.this.setMaximizedBounds(env.getMaximumWindowBounds());
+        }else{
+            setExtendedState(JFrame.NORMAL);
+            maximized = true;
+        }
+    }                                     
+    static boolean maximized = true;
     
       private void MinimizedMouseClicked(java.awt.event.MouseEvent evt) {                                       
       // minimize btn code
@@ -250,6 +267,8 @@ public class Start extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
+    
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

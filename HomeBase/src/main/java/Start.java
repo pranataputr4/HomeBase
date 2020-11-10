@@ -231,7 +231,21 @@ public class Start extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
- 
+     private void LoginActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        
+    }   
+    
+        
+      private void CloseMouseClicked(java.awt.event.MouseEvent evt) {                                   
+        
+      System.exit(0);
+    }
+    
+      private void MinimizedMouseClicked(java.awt.event.MouseEvent evt) {                                       
+      // minimize btn code
+      Start.this.setExtendedState(JFrame.ICONIFIED);
+    }                                      
+    static boolean minimized = true;
     
     /**
      * @param args the command line arguments

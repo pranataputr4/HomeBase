@@ -220,7 +220,20 @@ public class Login extends javax.swing.JFrame {
     static boolean minimized = true;
     
     private void LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginActionPerformed
-        // TODO add your handling code here:
+        String user = "admin";
+        String pass = "123456";
+        String username = nama.getText();
+        String password = pas.getText();
+            if (username.equals(user) && password.equals(pass)) {
+                this.setVisible(false);
+                new Home(). setVisible(true);
+            }else{
+            javax.swing.JOptionPane.showMessageDialog(null, "Maaf user atau "
+                    + "password anda salah");
+            nama.setText("");
+            pas.setText("");
+            nama.requestFocus();
+}
     }//GEN-LAST:event_LoginActionPerformed
 
     private void IduserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IduserActionPerformed

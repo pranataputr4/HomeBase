@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="formJadwal" prefHeight="643.0" prefWidth="778.0" style="-fx-background-color: #003366;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rpl.homebase.FormTambahEditJadwalController">
+    <children>
+      <VBox prefHeight="87.0" prefWidth="778.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label text="HomeBase" textFill="#669900">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label text="Aplikasi Presensi Mahasiswa">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="117.0" layoutY="203.0" prefHeight="290.0" prefWidth="121.0">
+         <children>
+            <Label text="Nama Kelas" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+            <Label text="Kode Mata Kuliah" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+            <Label text="Nama Matakuliah" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+            <Label text="Nama Dosen" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+            <Label text="Hari" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="25.0" />
+               </padding>
+            </Label>
+            <Label text="Waktu" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <VBox layoutX="275.0" layoutY="197.0" prefHeight="210.0" prefWidth="409.0">
+         <children>
+            <ComboBox fx:id="comboKelas" cache="true" cacheHint="QUALITY" layoutX="10.0" layoutY="10.0" onAction="#selectKelas" prefHeight="25.0" prefWidth="471.0" promptText="Select Kelas">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </ComboBox>
+            <Label fx:id="lblKodeMakul" text="Kode Matakuliah" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblMakul" text="Matakuliah" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblDosen" text="Nama Dosen" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+            <ComboBox fx:id="comboHari" cache="true" cacheHint="QUALITY" layoutX="10.0" layoutY="10.0" onAction="#selectHari" prefHeight="25.0" prefWidth="471.0" promptText="Select Hari">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </ComboBox>
+         </children>
+      </VBox>
+      <Button layoutX="490.0" layoutY="604.0" mnemonicParsing="false" onAction="#btnCancel" prefHeight="25.0" prefWidth="128.0" text="Cancel" />
+      <Button fx:id="btnSimpan" layoutX="636.0" layoutY="604.0" mnemonicParsing="false" onAction="#btnSimpan" prefHeight="25.0" prefWidth="128.0" text="Simpan" />
+      <ComboBox fx:id="comboMulai" layoutX="275.0" layoutY="415.0" prefHeight="25.0" prefWidth="155.0" promptText="Select Jam Mulai" />
+      <ComboBox fx:id="comboAkhir" layoutX="529.0" layoutY="415.0" prefHeight="25.0" prefWidth="155.0" promptText="Select Jam Berakhir" />
+      <Label layoutX="457.0" layoutY="418.0" text="Sampai" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="formUser" prefHeight="643.0" prefWidth="778.0" style="-fx-background-color: #003366;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rpl.homebase.FormTambahEditUserController">
+    <children>
+      <VBox prefHeight="87.0" prefWidth="778.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label text="HomeBase" textFill="#669900">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label text="Aplikasi Presensi Mahasiswa">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="117.0" layoutY="203.0" prefHeight="237.0" prefWidth="121.0">
+         <children>
+            <Label text="Username" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+            <Label text="Password" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+            <Label text="Nama Lengkap" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="25.0" />
+               </padding>
+            </Label>
+            <Label layoutX="10.0" layoutY="135.0" text="Bidang Studi" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="25.0" />
+               </padding>
+            </Label>
+            <Label text="Kelamin" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="25.0" />
+               </padding>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <VBox layoutX="275.0" layoutY="197.0" prefHeight="250.0" prefWidth="366.0">
+         <children>
+            <TextField fx:id="txtUsername" promptText="Inputkan Username">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="txtPassword" promptText="Inputkan Password">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </PasswordField>
+            <TextField fx:id="txtNama" promptText="Inputkan Nama Lengkap">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtBidang" promptText="Inputkan Bidang Studi">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </TextField>
+            <RadioButton fx:id="rbBoy" mnemonicParsing="false" text="Laki - laki" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgGender" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbGirl" mnemonicParsing="false" text="Perempuan" textFill="WHITE" toggleGroup="$tgGender" />
+         </children>
+      </VBox>
+      <Button layoutX="490.0" layoutY="604.0" mnemonicParsing="false" onAction="#btnCancel" prefHeight="25.0" prefWidth="128.0" text="Cancel" />
+      <Button fx:id="btnSimpan" layoutX="636.0" layoutY="604.0" mnemonicParsing="false" onAction="#btnSimpan" prefHeight="25.0" prefWidth="128.0" text="Simpan" />
+   </children>
+</AnchorPane>

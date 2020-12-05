@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="dashAdminJadwal" prefHeight="643.0" prefWidth="778.0" style="-fx-background-color: #003366;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rpl.homebase.DashAdminJadwalController">
+    <children>
+      <VBox prefHeight="90.0" prefWidth="778.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label text="HomeBase" textFill="#669900">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label text="Aplikasi Presensi Mahasiswa">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </VBox>
+      <TableView fx:id="tvJadwal" layoutX="219.0" layoutY="130.0" onMouseClicked="#click" prefHeight="504.0" prefWidth="548.0" style="-fx-font-size: 10px;">
+        <columns>
+            <TableColumn fx:id="colID" prefWidth="75.0" text="ID" visible="false" />
+          <TableColumn fx:id="colKelas" editable="false" prefWidth="77.0" text="Kelas" />
+          <TableColumn fx:id="colKode" editable="false" prefWidth="133.0" text="Kode Makul" />
+          <TableColumn fx:id="colMakul" editable="false" prefWidth="237.0" text="Matakuliah" />
+          <TableColumn fx:id="colHari" editable="false" prefWidth="100.0" text="Hari" />
+        </columns>
+      </TableView>
+      <Button layoutX="69.0" layoutY="603.0" mnemonicParsing="false" onAction="#btnLogout" prefHeight="25.0" prefWidth="85.0" text="Logout" />
+      <Button layoutX="695.0" layoutY="102.0" mnemonicParsing="false" onAction="#btnTambah" prefHeight="25.0" prefWidth="70.0" text="Tambah" />
+      <Button layoutX="625.0" layoutY="102.0" mnemonicParsing="false" onAction="#btnUbah" prefHeight="25.0" prefWidth="70.0" text="Ubah" />
+      <Button layoutX="555.0" layoutY="102.0" mnemonicParsing="false" onAction="#btnHapus" prefHeight="25.0" prefWidth="70.0" text="Hapus" />
+      <Label layoutX="219.0" layoutY="101.0" text="Jadwal" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <VBox layoutX="18.0" layoutY="248.0" prefHeight="341.0" prefWidth="188.0" style="-fx-background-color: fff;">
+         <children>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnUser" text="Data Dosen">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnMahasiswa" text="Data Mahasiswa">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnMakul" text="Data Matakuliah">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnKelas" text="Kelas">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnJadwal" style="-fx-background-color: #669900;" text="Jadwal">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnPresensi" text="Presensi">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </padding></VBox>
+      <Label layoutX="18.0" layoutY="130.0" text="Welcome," textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAdmin" layoutX="19.0" layoutY="157.0" text="lblAdmin" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnDetail" layoutX="476.0" layoutY="102.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Detail" />
+   </children>
+</AnchorPane>

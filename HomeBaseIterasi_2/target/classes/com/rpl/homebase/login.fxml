@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="login" prefHeight="643.0" prefWidth="778.0" style="-fx-background-color: #003366;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rpl.homebase.LoginController">
+    <children>
+      <VBox prefHeight="93.0" prefWidth="778.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label text="HomeBase" textFill="#669900">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label text="Aplikasi Presensi Mahasiswa">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </VBox>
+      <Label layoutX="206.0" layoutY="308.0" text="Password" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="204.0" layoutY="265.0" text="Username" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="txtUsername" layoutX="305.0" layoutY="259.0" prefHeight="39.0" prefWidth="313.0" promptText="Input Your Username">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <PasswordField fx:id="txtPassword" layoutX="305.0" layoutY="302.0" prefHeight="39.0" prefWidth="313.0" promptText="Input Your Password">
+         <font>
+            <Font size="18.0" />
+         </font></PasswordField>
+      <Button layoutX="387.0" layoutY="447.0" mnemonicParsing="false" onAction="#btnRegis" prefHeight="39.0" prefWidth="149.0" text="Registrasi">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="387.0" layoutY="374.0" mnemonicParsing="false" onAction="#btnLogin" prefHeight="39.0" prefWidth="149.0" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

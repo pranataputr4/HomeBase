@@ -1,0 +1,13 @@
+Admin: 
+username: admin
+password: admin
+===============
+Dosen:
+username: Agata
+password: agata
+===============
+
+Catatan: 
+1. fitur tambah mahasiwa belum kami buat, sehingga fitur daftar mahasiswa disetiap
+matkul belum bisa diakses.
+2. fitur detal dan ubah jadwal matakuliah belum kami buat
